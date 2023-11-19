@@ -1,18 +1,36 @@
-# echo_bot
+# FastAPI Echo Bot along with Dockerfile
 
-echo_bot
+fastapi_echo_bot
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot that accepts input from the user and echoes it back.
+This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot using FastAPI that accepts input from the user and echoes it back.
 
 ## Prerequisites
 
 This sample **requires** prerequisites in order to run.
 
-### Install Python 3.6
+### Install Python 3.9
 
 ## Running the sample
-- Run `pip install -r requirements.txt` to install all dependencies
-- Run `python app.py`
+
+1. Clone the repository:
+    ```
+    git clone https://github.com/MusaddiqueHussainLabs/fastapi_echo_bot.git
+    ```
+
+2. Install the dependencies:
+    ```
+    cd echo-bot
+    pip install -r requirements.txt
+    ```
+
+3. Run the FastAPI server:
+    ```
+    uvicorn app.main:app --host localhost --port 3978 --reload
+    ```
+
+### Endpoints
+
+- `POST /api/messages/`: Sends a message and echoes it back.
 
 
 ## Testing the bot using Bot Framework Emulator
