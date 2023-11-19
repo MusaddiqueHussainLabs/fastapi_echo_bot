@@ -1,0 +1,5 @@
+botbuilder-core
+fastapi[all]
+uvicorn[standard]
+asyncio
+aiohttp
